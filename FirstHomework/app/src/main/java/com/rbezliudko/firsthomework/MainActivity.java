@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.setText(makeResult());
+                try {
+                    result.setText(makeResult());
+                } catch (NumberFormatException ex)
+                {
+                    result.setText(R.string.error_message);
+                }
             }
         });
     }

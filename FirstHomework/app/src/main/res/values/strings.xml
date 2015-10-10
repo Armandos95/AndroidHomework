@@ -5,4 +5,5 @@
     <string name="text_view_B">B parameter</string>
     <string name="text_view_C">C parameter</string>
     <string name="button">Solve the equation</string>
+    <string name="error_message">Error: input values must be integers.</string>
 </resources>
