@@ -27,7 +27,7 @@
         android:id="@+id/edit_text_1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned" />
+        android:inputType="numberDecimal|numberSigned" />
 
     <TextView
         android:text="@string/text_view_B"
@@ -39,7 +39,7 @@
         android:id="@+id/edit_text_2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned" />
+        android:inputType="numberDecimal|numberSigned" />
 
     <TextView
         android:text="@string/text_view_C"
@@ -51,10 +51,16 @@
         android:id="@+id/edit_text_3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberSigned" />
+        android:inputType="numberDecimal|numberSigned" />
+
+    <CheckBox
+        android:id="@+id/checkbox_complex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_complex"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_result"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/button_height"
         android:text="@string/button"/>
