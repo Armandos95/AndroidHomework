@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quadratic equation</string>
+    <string name="text_view_equation">Ax^2 + Bx + Cx = 0</string>
+    <string name="text_view_A">A parameter</string>
+    <string name="text_view_B">B parameter</string>
+    <string name="text_view_C">C parameter</string>
+    <string name="button">Solve the equation</string>
+</resources>
