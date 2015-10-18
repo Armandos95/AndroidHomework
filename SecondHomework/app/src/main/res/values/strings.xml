@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dual Homework</string>
+    <!--Main activity-->
+    <string name="main_activity_first_button">Show first homework</string>
+    <string name="main_activity_second_button">Show second homework</string>
+    <string name="button_return">Return to main menu</string>
+    <!--First homework-->
+    <string name="text_view_equation">Ax^2 + Bx + Cx = 0</string>
+    <string name="text_view_A">A parameter</string>
+    <string name="text_view_B">B parameter</string>
+    <string name="text_view_C">C parameter</string>
+    <string name="checkbox_complex">Show complex roots</string>
+    <string name="button_result">Solve the equation</string>
+    <string name="error_message">Error: input values must be real numbers.</string>
+    <!--Second homework-->
+    <string name="text_view_fibonacci">Fibonacci number</string>
+    <string name="text_view_factorial">Factorial</string>
+    <string name="button_count">Count</string>
+</resources>
