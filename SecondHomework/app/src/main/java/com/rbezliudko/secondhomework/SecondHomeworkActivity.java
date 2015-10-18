@@ -15,8 +15,8 @@ public class SecondHomeworkActivity extends AppCompatActivity {
     private TextView textCounted;
     private Button buttonReturn;
 
-    private long[] arrayFibonacciNumbers = new long[93];
-    private long[] arrayFactorialNumbers = new long[21];
+    private static long[] arrayFibonacciNumbers = new long[93];
+    private static long[] arrayFactorialNumbers = new long[21];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class SecondHomeworkActivity extends AppCompatActivity {
         });
     }
 
-    private void countAllFibonacci(long[] fibonaccis){
+    public static void countAllFibonacci(long[] fibonaccis){
         fibonaccis[0] = 0;
         fibonaccis[1] = 1;
         for (int i = 2; i < 92; i++){
@@ -55,7 +55,7 @@ public class SecondHomeworkActivity extends AppCompatActivity {
         }
     }
 
-    private void countAllFactorial(long[] factorials){
+    public static void countAllFactorial(long[] factorials){
         factorials[0] = 1;
         for (int i = 1; i < 20; i++){
             long m = 1;
@@ -66,11 +66,13 @@ public class SecondHomeworkActivity extends AppCompatActivity {
         }
     }
 
-    private long getFibonacciNumber(int index){
+    public static long getFibonacciNumber(int index){
+        countAllFibonacci(arrayFibonacciNumbers);
         return arrayFibonacciNumbers[index];
     }
 
-    private long getFactorial(int index){
+    public static long getFactorial(int index){
+        countAllFactorial(arrayFactorialNumbers);
         return arrayFactorialNumbers[index];
     }
 
@@ -82,7 +84,7 @@ public class SecondHomeworkActivity extends AppCompatActivity {
             if (indexFibonacci > 91) countString += "Way too big value, try index that is lower than 92." + "\n";
             else countString += "F_" + indexFibonacci + " = " + getFibonacciNumber(indexFibonacci) + "\n";
         }
-        if (editFibonacciNumber.getText().toString().equals("")) countString += "No index." + "\n";
+        if (editFactorialNumber.getText().toString().equals("")) countString += "No index." + "\n";
         else{
             int indexFactorial = Integer.parseInt(editFactorialNumber.getText().toString());
             if (indexFactorial > 19) countString += "Way too big value, try index that is lower than 20." + "\n";
