@@ -15,9 +15,6 @@ public class SecondHomeworkActivity extends AppCompatActivity {
     private TextView textCounted;
     private Button buttonReturn;
 
-    private static long[] arrayFibonacciNumbers = new long[93];
-    private static long[] arrayFactorialNumbers = new long[21];
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +26,10 @@ public class SecondHomeworkActivity extends AppCompatActivity {
         textCounted = (TextView) findViewById(R.id.text_counted);
         buttonReturn = (Button) findViewById(R.id.button_return_second);
 
-        countAllFibonacci(arrayFibonacciNumbers);
-        countAllFactorial(arrayFactorialNumbers);
-
         buttonCount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textCounted.setText(setCountString().toString());
+                textCounted.setText(setCountString());
             }
         });
 
@@ -47,33 +41,36 @@ public class SecondHomeworkActivity extends AppCompatActivity {
         });
     }
 
-    public static void countAllFibonacci(long[] fibonaccis){
-        fibonaccis[0] = 0;
-        fibonaccis[1] = 1;
-        for (int i = 2; i < 92; i++){
-            fibonaccis[i] = fibonaccis[i - 1] + fibonaccis[i - 2];
-        }
-    }
-
-    public static void countAllFactorial(long[] factorials){
-        factorials[0] = 1;
-        for (int i = 1; i < 20; i++){
-            long m = 1;
-            for (int j = 1; j <= i; j++){
-                m *= j;
+    public long getFibonacciNumber(int index){
+        if (index == 0)
+            return 0;
+        else if (index == 1 || index == 2)
+            return 1;
+        else {
+            long prevprev = 0;
+            long prev = 1;
+            long current = 1;
+            for (int i = 3; i <= index; i++)
+            {
+                prevprev = prev;
+                prev = current;
+                current = prevprev + prev;
             }
-            factorials[i] = m;
+            return current;
         }
     }
 
-    public static long getFibonacciNumber(int index){
-        countAllFibonacci(arrayFibonacciNumbers);
-        return arrayFibonacciNumbers[index];
-    }
-
-    public static long getFactorial(int index){
-        countAllFactorial(arrayFactorialNumbers);
-        return arrayFactorialNumbers[index];
+    public long getFactorial(int index){
+        if (index == 0)
+            return 1;
+        else {
+            long result = 1;
+            for (int i = 1; i <= index; i++)
+            {
+                 result *= i;
+            }
+            return result;
+        }
     }
 
     private String setCountString(){
