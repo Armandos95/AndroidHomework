@@ -8,10 +8,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
 
-        if (savedInstanceState == null) {
+        if (isAddFragment()) {
             addFragment();
+        }
+        else {
+            setContentView(R.layout.activity_base);
         }
     }
 

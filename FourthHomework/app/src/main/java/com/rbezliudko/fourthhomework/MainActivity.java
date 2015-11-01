@@ -1,50 +1,33 @@
 package com.rbezliudko.fourthhomework;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import com.rbezliudko.fourthhomework.interfaces.ButtonMethodsInterface;
 
 public class MainActivity extends BaseActivity implements ButtonMethodsInterface{
 
-    private Button buttonNext;
-    private Button buttonPrevious;
-
+    private TextView mainText;
     private FragmentManager manager = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (!isAddFragment()) {
-            setContentView(R.layout.activity_main_false);
+        setContentView(R.layout.activity_main);
+
+        mainText = (TextView) findViewById(R.id.main_text);
+        if (isAddFragment()) {
+            mainText.setText("Choose a fragment");
         }
         else {
-            setContentView(R.layout.activity_main_true);
-            buttonNext = (Button) findViewById(R.id.button_next);
-            buttonPrevious = (Button) findViewById(R.id.button_previous);
-
-            buttonNext.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    showNext();
-                }
-            });
-
-            buttonPrevious.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    showPrevious();
-                }
-            });
+            mainText.setText("No fragment");
         }
     }
 
     @Override
     public void addFragment() {
-        manager.beginTransaction().add(R.id.fragment_container, new EmptyFragment()).commit();
+        manager.beginTransaction().add(R.id.fragment_container, new MainFragment()).commit();
     }
 
     @Override
