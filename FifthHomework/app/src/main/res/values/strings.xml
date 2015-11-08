@@ -1,5 +1,50 @@
 <resources>
     <string name="app_name">Fifth Homework</string>
+    <!--Main activity-->
+    <string name="button_return">Return to main menu</string>
+    <string name="hello_world_text">Hello World!</string>
+    <string name="action_blue">Make text blue</string>
+    <string name="action_green">Make text green</string>
+    <string name="action_red">Make text red</string>
+    <string name="action_black">Make text black</string>
+    <!--Navigation drawer-->
+    <string-array name="homeworks_array">
+        <item>Homework 1</item>
+        <item>Homework 2</item>
+        <item>Homework 3</item>
+        <item>Homework 4</item>
+        <item>Homework 5</item>
+    </string-array>
+    <string name="button_homework1">Homework 1</string>
+    <string name="button_homework2">Homework 2</string>
+    <string name="button_homework3">Homework 3</string>
+    <string name="button_homework4">Homework 4</string>
+    <string name="button_homework5">Homework 5</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--First homework-->
+    <string name="text_view_equation">Ax^2 + Bx + Cx = 0</string>
+    <string name="text_view_A">A parameter</string>
+    <string name="text_view_B">B parameter</string>
+    <string name="text_view_C">C parameter</string>
+    <string name="checkbox_complex">Show complex roots</string>
+    <string name="button_result">Solve the equation</string>
+    <string name="error_message">Error: input values must be real numbers.</string>
+    <!--Second homework-->
+    <string name="text_view_fibonacci">Fibonacci number</string>
+    <string name="text_view_factorial">Factorial</string>
+    <string name="button_count">Count</string>
+    <!--Third homework-->
+    <string name="button_3_1">1</string>
+    <string name="button_3_2">2</string>
+    <string name="button_3_3">3</string>
+    <string name="button_3_4">4</string>
+    <!--Fourth homework-->
+    <string name="button_next">Next</string>
+    <string name="button_previous">Previous</string>
+    <string name="fragment_next">Next</string>
+    <string name="fragment_previous">Previous</string>
+    <!--Fifth homework-->
     <string name="button_twinkle">Twinkle</string>
     <string name="button_spin">Spin</string>
     <string name="button_shake">Shake</string>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_blue"
+        android:title="@string/action_blue"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_green"
+        android:title="@string/action_green"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_red"
+        android:title="@string/action_red"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_black"
+        android:title="@string/action_black"
+        android:orderInCategory="103"
+        app:showAsAction="ifRoom|withText" />
+</menu>

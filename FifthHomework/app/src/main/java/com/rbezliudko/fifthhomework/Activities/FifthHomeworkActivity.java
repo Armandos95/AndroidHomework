@@ -1,21 +1,20 @@
-package com.rbezliudko.fifthhomework;
+package com.rbezliudko.fifthhomework.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.RotateAnimation;
-import android.view.animation.ScaleAnimation;
-import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.rbezliudko.fifthhomework.R;
+
+public class FifthHomeworkActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_fifth_homework);
 
         Button buttonTwinkle = (Button) findViewById(R.id.button_twinkle);
         Button buttonSpin = (Button) findViewById(R.id.button_spin);
