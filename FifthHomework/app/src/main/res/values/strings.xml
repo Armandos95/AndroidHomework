@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fifth Homework</string>
+    <string name="button_twinkle">Twinkle</string>
+    <string name="button_spin">Spin</string>
+    <string name="button_shake">Shake</string>
+    <string name="button_stretch">Stretch</string>
+</resources>
