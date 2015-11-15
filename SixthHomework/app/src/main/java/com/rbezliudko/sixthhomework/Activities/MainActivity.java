@@ -1,4 +1,4 @@
-package com.rbezliudko.fifthhomework.Activities;
+package com.rbezliudko.sixthhomework.Activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.rbezliudko.fifthhomework.R;
+import com.rbezliudko.sixthhomework.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -87,11 +87,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.button_homework3) {
             final Intent thirdIntent = new Intent(MainActivity.this, ThirdHomeworkActivity.class);
             MainActivity.this.startActivity(thirdIntent);
+        } else if (id == R.id.button_homework4) {
+            final Intent fourthIntent = new Intent(MainActivity.this, FourthHomeworkMainActivity.class);
+            MainActivity.this.startActivity(fourthIntent);
         } else if (id == R.id.button_homework5) {
             final Intent fifthIntent = new Intent(MainActivity.this, FifthHomeworkActivity.class);
             MainActivity.this.startActivity(fifthIntent);
-        } else if (id == R.id.button_homework4) {
-            final Intent fourthIntent = new Intent(MainActivity.this, FourthHomeworkMainActivity.class);
+        } else if (id == R.id.button_homework6) {
+            final Intent fourthIntent = new Intent(MainActivity.this, SixthHomeworkMainActivity.class);
             MainActivity.this.startActivity(fourthIntent);
         }
 

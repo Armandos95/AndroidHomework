@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rbezliudko.fifthhomework" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rbezliudko.sixthhomework" >
 
     <application
         android:allowBackup="true"
@@ -25,6 +24,10 @@
         <activity android:name=".Activities.FourthHomeworkMainActivity" >
         </activity>
         <activity android:name=".Activities.FifthHomeworkActivity" >
+        </activity>
+        <activity android:name=".Activities.SixthHomeworkMainActivity" >
+        </activity>
+        <activity android:name=".Activities.SixthHomeworkAdditionalActivity" >
         </activity>
     </application>
 

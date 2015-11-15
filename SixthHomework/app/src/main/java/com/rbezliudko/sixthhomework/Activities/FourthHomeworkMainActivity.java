@@ -1,16 +1,15 @@
-package com.rbezliudko.fifthhomework.Activities;
+package com.rbezliudko.sixthhomework.Activities;
 
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.rbezliudko.fifthhomework.Fragments.MainFragment;
-import com.rbezliudko.fifthhomework.Fragments.NextFragment;
-import com.rbezliudko.fifthhomework.Fragments.PreviousFragment;
-import com.rbezliudko.fifthhomework.R;
+import com.rbezliudko.sixthhomework.Fragments.FourthHomeworkMainFragment;
+import com.rbezliudko.sixthhomework.Fragments.FourthHomeworkNextFragment;
+import com.rbezliudko.sixthhomework.Fragments.FourthHomeworkPreviousFragment;
+import com.rbezliudko.sixthhomework.R;
 
-import com.rbezliudko.fifthhomework.Interfaces.ButtonMethodsInterface;
+import com.rbezliudko.sixthhomework.Interfaces.ButtonMethodsInterface;
 
 public class FourthHomeworkMainActivity extends FourthHomeworkBaseActivity implements ButtonMethodsInterface{
 
@@ -33,17 +32,17 @@ public class FourthHomeworkMainActivity extends FourthHomeworkBaseActivity imple
 
     @Override
     public void addFragment() {
-        manager.beginTransaction().add(R.id.fragment_container, new MainFragment()).commit();
+        manager.beginTransaction().add(R.id.fragment_container, new FourthHomeworkMainFragment()).commit();
     }
 
     @Override
     public void showNext(){
-        manager.beginTransaction().replace(R.id.fragment_container, new NextFragment()).addToBackStack(null).commit();
+        manager.beginTransaction().replace(R.id.fragment_container, new FourthHomeworkNextFragment()).addToBackStack(null).commit();
     }
 
     @Override
     public void showPrevious(){
-        manager.beginTransaction().replace(R.id.fragment_container, new PreviousFragment()).addToBackStack(null).commit();
+        manager.beginTransaction().replace(R.id.fragment_container, new FourthHomeworkPreviousFragment()).addToBackStack(null).commit();
     }
 
     @Override

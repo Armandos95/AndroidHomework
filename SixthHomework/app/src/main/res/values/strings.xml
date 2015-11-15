@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Fifth Homework</string>
+    <!--Main activity-->
+    <string name="button_return">Return to main menu</string>
+    <string name="hello_world_text">Hello World!</string>
+    <string name="action_blue">Make text blue</string>
+    <string name="action_green">Make text green</string>
+    <string name="action_red">Make text red</string>
+    <string name="action_black">Make text black</string>
+    <!--Navigation drawer-->
+    <string name="button_homework1">Homework 1</string>
+    <string name="button_homework2">Homework 2</string>
+    <string name="button_homework3">Homework 3</string>
+    <string name="button_homework4">Homework 4</string>
+    <string name="button_homework5">Homework 5</string>
+    <string name="button_homework6">Homework 6</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--First homework-->
+    <string name="text_view_1_equation">Ax^2 + Bx + Cx = 0</string>
+    <string name="text_view_1_A">A parameter</string>
+    <string name="text_view_1_B">B parameter</string>
+    <string name="text_view_1_C">C parameter</string>
+    <string name="checkbox_1_complex">Show complex roots</string>
+    <string name="button_1_result">Solve the equation</string>
+    <string name="error_message">Error: input values must be real numbers.</string>
+    <!--Second homework-->
+    <string name="text_view_2_fibonacci">Fibonacci number</string>
+    <string name="text_view_2_factorial">Factorial</string>
+    <string name="button_2_count">Count</string>
+    <!--Third homework-->
+    <string name="button_3_1">1</string>
+    <string name="button_3_2">2</string>
+    <string name="button_3_3">3</string>
+    <string name="button_3_4">4</string>
+    <!--Fourth homework-->
+    <string name="button_4_next">Next</string>
+    <string name="button_4_previous">Previous</string>
+    <string name="text_view_4_next">Next</string>
+    <string name="text_view_4_previous">Previous</string>
+    <!--Fifth homework-->
+    <string name="button_5_twinkle">Twinkle</string>
+    <string name="button_5_spin">Spin</string>
+    <string name="button_5_shake">Shake</string>
+    <string name="button_5_stretch">Stretch</string>
+    <!--Sixth homework-->
+    <string name="text_view_6_fragment_a">Fragment A</string>
+    <string name="button_6_zergling">Zergling</string>
+    <string name="button_6_zealot">Zergling</string>
+    <string name="button_6_queen">Zergling</string>
+    <string name="button_6_marauder">Zergling</string>
+    <string name="button_6_stalker">Zergling</string>
+    <string name="button_6_infestor">Zergling</string>
+    <string name="text_view_6_fragment_b">Fragment B</string>
+</resources>

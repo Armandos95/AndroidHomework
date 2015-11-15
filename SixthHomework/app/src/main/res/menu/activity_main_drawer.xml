@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/button_homework1"
+            android:title="@string/button_homework1" />
+        <item
+            android:id="@+id/button_homework2"
+            android:title="@string/button_homework2" />
+        <item
+            android:id="@+id/button_homework3"
+            android:title="@string/button_homework3" />
+        <item
+            android:id="@+id/button_homework4"
+            android:title="@string/button_homework4" />
+        <item
+            android:id="@+id/button_homework5"
+            android:title="@string/button_homework5" />
+        <item
+            android:id="@+id/button_homework6"
+            android:title="@string/button_homework6" />
+    </group>
+
+</menu>
