@@ -1,6 +1,5 @@
 package com.rbezliudko.sixthhomework.Fragments;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -54,5 +53,4 @@ public class FourthHomeworkMainFragment extends android.support.v4.app.Fragment 
             }
         });
     }
-
 }
