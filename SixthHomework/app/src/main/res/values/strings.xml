@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fifth Homework</string>
+    <string name="app_name">Sixth Homework</string>
     <!--Main activity-->
     <string name="button_return">Return to main menu</string>
     <string name="hello_world_text">Hello World!</string>
@@ -46,10 +46,10 @@
     <!--Sixth homework-->
     <string name="text_view_6_fragment_a">Fragment A</string>
     <string name="button_6_zergling">Zergling</string>
-    <string name="button_6_zealot">Zergling</string>
-    <string name="button_6_queen">Zergling</string>
-    <string name="button_6_marauder">Zergling</string>
-    <string name="button_6_stalker">Zergling</string>
-    <string name="button_6_infestor">Zergling</string>
+    <string name="button_6_zealot">Zealot</string>
+    <string name="button_6_queen">Queen</string>
+    <string name="button_6_marauder">Marauder</string>
+    <string name="button_6_stalker">Stalker</string>
+    <string name="button_6_infestor">Infestor</string>
     <string name="text_view_6_fragment_b">Fragment B</string>
 </resources>

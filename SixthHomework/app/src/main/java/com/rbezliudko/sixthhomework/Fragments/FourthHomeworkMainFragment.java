@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.rbezliudko.sixthhomework.Interfaces.ButtonMethodsInterfaceFour;
 import com.rbezliudko.sixthhomework.R;
-import com.rbezliudko.sixthhomework.Interfaces.ButtonMethodsInterface;
 
 
 public class FourthHomeworkMainFragment extends android.support.v4.app.Fragment {
@@ -16,7 +16,7 @@ public class FourthHomeworkMainFragment extends android.support.v4.app.Fragment 
     private Button buttonNext;
     private Button buttonPrevious;
 
-    private ButtonMethodsInterface buttonMethodsInterface;
+    private ButtonMethodsInterfaceFour buttonMethodsInterfaceFour;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -27,9 +27,9 @@ public class FourthHomeworkMainFragment extends android.support.v4.app.Fragment 
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            buttonMethodsInterface = (ButtonMethodsInterface) activity;
+            buttonMethodsInterfaceFour = (ButtonMethodsInterfaceFour) activity;
         } catch (ClassCastException exception) {
-            throw new ClassCastException(activity.toString() +  " ButtonMethodsInterface");
+            throw new ClassCastException(activity.toString() +  " ButtonMethodsInterfaceFour");
         }
     }
 
@@ -42,14 +42,14 @@ public class FourthHomeworkMainFragment extends android.support.v4.app.Fragment 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonMethodsInterface.showNext();
+                buttonMethodsInterfaceFour.showNext();
             }
         });
 
         buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonMethodsInterface.showPrevious();
+                buttonMethodsInterfaceFour.showPrevious();
             }
         });
     }
