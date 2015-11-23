@@ -52,4 +52,5 @@
     <string name="button_6_stalker">Stalker</string>
     <string name="button_6_infestor">Infestor</string>
     <string name="text_view_6_fragment_b">Fragment B</string>
+    <string name="layout_type">one_fragment</string>
 </resources>

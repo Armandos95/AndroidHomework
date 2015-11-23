@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Sixth homework-->
+    <string name="layout_type">two_fragments</string>
+</resources>
