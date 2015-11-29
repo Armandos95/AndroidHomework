@@ -18,9 +18,7 @@ public class SixthHomeworkMainActivity extends AppCompatActivity implements Butt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sixth_homework_main);
-        TextView tempText = (TextView) findViewById(R.id.text_fragment_a);
-        tempText.setText(R.string.layout_type);
-        layoutType = tempText.getText().toString();
+        layoutType = getString(R.string.layout_type);
         fragmentB  = (SixthHomeworkBFragment) getFragmentManager().findFragmentById(R.id.fragment_6_b);
     }
 
